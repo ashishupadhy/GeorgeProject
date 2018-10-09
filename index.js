@@ -2,6 +2,7 @@ const express = require ('express');
 const app = express();
 const mongoose = require('mongoose');
 const config = require('./config/database');
+const path = require('path');
 
 
 mongoose.Promise = global.Promise;
@@ -14,9 +15,9 @@ mongoose.connect(config.uri,(err)=>{
         console.log('Connect to database: ' + config.db);
     }
 });
- 
+
 app.get('*', (req, res) =>{
-    res.send('<h1>Helow world</h1>');
+res.send('<h1> Hellow World</h1>')
 });
 
 app.listen(8080,()=>{
