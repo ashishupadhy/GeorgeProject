@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: 'Home', component: HomeComponent },
+  
   { path: '',
     redirectTo: '/Home',
     pathMatch: 'full'
@@ -23,8 +24,6 @@ const appRoutes: Routes = [
   { path: 'Testimonials', component: TestimonialsComponent  },
 
   { path: 'Contact', component: ContactComponent },
-
-
 ];
 
 @NgModule({
